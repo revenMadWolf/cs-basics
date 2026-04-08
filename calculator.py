@@ -10,11 +10,11 @@ for char in formula:
 first_number = int(formula[0:count])
 last_number = int(formula[count+1:len(formula)])
 
-if formula.__contains__("+"):
+if formula[count] == "+":
     print(first_number+last_number)
-if formula.__contains__("-"):
+if formula[count] == "-":
     print(first_number-last_number)
-if formula.__contains__("x"):
+if formula[count] == "x":
     print(first_number*last_number)
-if formula.__contains__("/"):
+if formula[count] == "/":
     print(first_number/last_number)
